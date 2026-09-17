@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Responsive overrides — mobile-first adjustments layered over style.css
+   ========================================================================== */
+
+/* ---------- Large desktop refinement ---------- */
+@media (max-width: 1280px) {
+  .container { padding: 0 20px; }
+}
+
+/* ---------- Tablet (1024px) ---------- */
+@media (max-width: 1024px) {
+  .hero__inner { gap: 40px; }
+  .about__inner { grid-template-columns: 1fr; gap: 24px; }
+  .about__lead h2 { position: static; }
+  .why__grid { grid-template-columns: repeat(2, 1fr); }
+  .process-list { grid-template-columns: repeat(2, 1fr); }
+  .contact__inner { grid-template-columns: 1fr; gap: 40px; }
+  .site-footer__inner { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Small tablet / large phone (768px) ---------- */
+@media (max-width: 768px) {
+  section { padding: 64px 0; }
+
+  .nav__toggle { display: flex; }
+  .nav__menu {
+    position: fixed;
+    inset: 65px 0 0 0;
+    background: var(--paper);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 32px 24px;
+    gap: 32px;
+    transform: translateX(100%);
+    transition: transform 0.3s var(--ease);
+    overflow-y: auto;
+  }
+  .nav__menu.is-open { transform: translateX(0); }
+  .nav__links { flex-direction: column; gap: 20px; width: 100%; }
+  .nav__links a { display: block; font-size: 1.05rem; }
+  .nav__actions { width: 100%; flex-direction: column; align-items: stretch; gap: 12px; }
+  .theme-toggle { align-self: flex-start; }
+
+  .hero { padding: 56px 0 64px; }
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__visual { order: -1; }
+  .hero__cta { flex-direction: column; align-items: stretch; }
+  .hero__cta .btn { text-align: center; }
+
+  .value-strip__list { justify-content: flex-start; gap: 10px 24px; }
+
+  .skills__grid { grid-template-columns: 1fr; gap: 32px; }
+
+  .service-row { grid-template-columns: 1fr; gap: 10px; }
+
+  .project-card { grid-template-columns: 1fr; }
+  .project-card:nth-child(even) .project-card__media { order: 0; }
+  .project-card__media { min-height: 220px; }
+  .project-card__body { padding: 28px 24px; }
+
+  .process-list { grid-template-columns: 1fr; }
+  .why__grid { grid-template-columns: 1fr; gap: 28px; }
+
+  .site-footer__inner { grid-template-columns: 1fr; gap: 28px; }
+  .site-footer__bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+}
+
+/* ---------- Phones (430px and below) ---------- */
+@media (max-width: 430px) {
+  .container { padding: 0 18px; }
+  .hero__title { font-size: clamp(2.1rem, 1.8rem + 4vw, 2.6rem); }
+  .hero__statement { font-size: 1.05rem; }
+  .editor__code { font-size: 0.76rem; padding: 18px 16px 20px; }
+  .contact-form { padding: 24px 18px; }
+}
+
+/* ---------- Very small phones (320px–375px) ---------- */
+@media (max-width: 375px) {
+  .nav { padding: 14px 18px; }
+  .brand-name { display: none; }
+  h2 { font-size: 1.6rem; }
+  .hero__cta { gap: 10px; }
+}
