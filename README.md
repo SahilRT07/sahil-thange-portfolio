@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <a href="YOUR_PORTFOLIO_URL">
+  <a href="https://sahil-thange-portfolio.vercel.app/">
     <img src="https://img.shields.io/badge/🌐_PORTFOLIO-LIVE-7C3AED?style=for-the-badge" alt="Portfolio">
   </a>
   &nbsp;
@@ -24,7 +24,7 @@
     <img src="https://img.shields.io/badge/GITHUB-SahilRT07-111111?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
   &nbsp;
-  <a href="YOUR_LINKEDIN_URL">
+  <a href="https://www.linkedin.com/in/sahil-thange-789b5434b/">
     <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
 </p>
