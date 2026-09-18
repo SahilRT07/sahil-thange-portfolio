@@ -78,8 +78,8 @@ const projects = [
     "Bright Data"
   ],
     image: "assets/projects/mediscan_ai.png", // e.g. "assets/images/projects/mediscan-ai.png"
-    github: "https://github.com/sumitsolaskar04-lab/smart-medicine-finder",
-    live: "https://smart-medicine-finder-wney.vercel.app",
+    github: "https://github.com/SahilRT07/sahil-thange-portfolio.git",
+    live: "https://smart-medicine-finder-wney-1ubmf70os-nexus-coder1.vercel.app/",
     caseStudy: {
     problem:
       "Finding the right medicine, comparing prices and locating a nearby pharmacy can require checking multiple sources, making the process slower and less convenient.",
